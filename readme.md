@@ -34,8 +34,8 @@ The Documentation will be done after the entire app will be integrated. This imp
 	│	│	├── plugins/
 	│	│	└── img/
 	└── app/
-	    ├── Templates/
-	    │   ├── __adminlte/
+	    ├── Views/
+	    │   ├── admin/
 	    │   │   ├── assets/
 	    │   │   ├── demos/
 	    │   │   ├── layouts/
@@ -43,13 +43,14 @@ The Documentation will be done after the entire app will be integrated. This imp
 	    │   │   ├── partials/
 	    │   │   └── template/
 	    │   ├── front/
-	    │   │   ├── assets/
-	    │   │   ├── demos/
-	    │   │   ├── layouts/
-	    │   │   ├── partials/
-	    │   │   │   ├── header.php
-	    │   │   │   └── footer.php
-	    │   │   └── template/
+	    │   │   └── default/
+	    │   │       ├── assets/
+	    │   │       ├── demos/
+	    │   │       ├── layouts/
+	    │   │       ├── partials/
+	    │   │       │   ├── header.php
+	    │   │       │   └── footer.php
+	    │   │       └── template/
 	    │   ├── auth/
 	    │   ├── errors/
 	    │   ├── layouts/
@@ -194,6 +195,25 @@ The Documentation will be done after the entire app will be integrated. This imp
 ##### Publish Configuration Settings
 
 	php artisan vendor:publish
+
+
+## What I modified
+
+Folder structure - transferred everything to app folder to make it more self-contained application.
+
+Modular - Due to the large projects I am making, I've opted to make everything modular using caffeinated/modules package. This enabled me to manage databases with up to 200 tables or more. Currently tested with 180+ tables and works fine. It's also pretty organized.
+
+Views - Views are now a centralized part of the application as a template.
+
+Individual Views per Module - Each module have their own views to make it more portable to transfer from one app to another.
+
+Generated Code - Currently, the generator I've made is internal and will be released someday once it get's to alpha stage.
+
+Better Admin Layout - A lot of configuration and customization have been done to integrate AdminLTE to the system. Most of it lies under the code.
+
+Laravel 5.2 - Obviously a lot of changes have been done to Laravel in 5.2. With that in mind, This app will be able to handle large scale development.
+
+Now, make something awesome.
 
 ## Licenses
 
