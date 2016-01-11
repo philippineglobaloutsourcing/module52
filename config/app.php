@@ -156,6 +156,18 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /**
+         * Third-party Packages
+         */
+        Collective\Html\HtmlServiceProvider::class,
+        Intervention\Image\ImageServiceProvider::class,
+        Laracasts\Flash\FlashServiceProvider::class,
+        Roumen\Feed\FeedServiceProvider::class,
+        Maatwebsite\Excel\ExcelServiceProvider::class,
+        GrahamCampbell\Parse\ParseServiceProvider::class,
+        Creativeorange\Gravatar\GravatarServiceProvider::class,
+
+
     ],
 
     /*
@@ -201,6 +213,18 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
+
+        /**
+         * Third-party Packages
+         */
+        'Form'       => Collective\Html\FormFacade::class,
+        'Html'       => Collective\Html\HtmlFacade::class,
+        'Image'      => Intervention\Image\Facades\Image::class,
+        'Flash'      => Laracasts\Flash\Flash::class,
+        'Feed'      => Roumen\Feed\Facades\Feed::class,
+        'Excel'     => Maatwebsite\Excel\Facades\Excel::class,
+        'Gravatar'   => Creativeorange\Gravatar\Facades\Gravatar::class,
+
 
     ],
 
