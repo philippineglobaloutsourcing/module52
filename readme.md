@@ -184,6 +184,12 @@ The Documentation will be done after the entire app will be integrated. This imp
 	
 	* Note: as of this publication caffeinated/modules is not yet ready for 5.2 so I have to manually integrate it ... So there's that
 	
+	**Notes**
+	autoload_psr4.php
+	'Caffeinated\\Modules\\' => array($vendorDir . '/caffeinated/modules/src/Caffeinated/Modules'),
+
+	ModulesServiceProvider
+	change **bindShared** to **singleton**
 
 ##### Publish Configuration Settings
 

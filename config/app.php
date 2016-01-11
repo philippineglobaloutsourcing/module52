@@ -167,6 +167,8 @@ return [
         GrahamCampbell\Parse\ParseServiceProvider::class,
         Creativeorange\Gravatar\GravatarServiceProvider::class,
 
+        Caffeinated\Modules\ModulesServiceProvider::class,
+
 
     ],
 
@@ -224,6 +226,8 @@ return [
         'Feed'      => Roumen\Feed\Facades\Feed::class,
         'Excel'     => Maatwebsite\Excel\Facades\Excel::class,
         'Gravatar'   => Creativeorange\Gravatar\Facades\Gravatar::class,
+
+        'Module'     => Caffeinated\Modules\Facades\Module::class,
 
 
     ],
