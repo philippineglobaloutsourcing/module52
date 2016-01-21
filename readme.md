@@ -19,20 +19,19 @@ The Documentation will be done after the entire app will be integrated. This imp
 ## Folder Structure
 	CubosAdmin/
 	├── public/
-	│	├──	themes/
-	│	│	├──	adminlte
+	│	├── views/
+	│	│	├── admin
 	│	│	│   ├── bootstrap/
 	│	│	│   ├── css/
 	│	│	│   ├── img/
-	│	│	│   ├── js/
-	│	│	│   └── plugins/
+	│	│	│   └── js/
 	│	│   └── img/
 	│	├──	assets/
-	│	│	├── css/
-	│	│	├── js/
-	│	│	├── font/
-	│	│	├── plugins/
-	│	│	└── img/
+	│	│   ├── css/
+	│	│   ├── js/
+	│	│   ├── font/
+	│	│   ├── plugins/
+	│	│   └── img/
 	└── app/
 	    ├── Views/
 	    │   ├── admin/
@@ -183,7 +182,7 @@ The Documentation will be done after the entire app will be integrated. This imp
 	
 	'Module'   => Caffeinated\Modules\Facades\Module::class,
 	
-	* Note: as of this publication caffeinated/modules is not yet ready for 5.2 so I have to manually integrate it ... So there's that
+	* Note: as of 2017-01-11 caffeinated/modules is not yet ready for 5.2 so I have to manually integrate it.
 	
 	**Notes**
 	autoload_psr4.php
